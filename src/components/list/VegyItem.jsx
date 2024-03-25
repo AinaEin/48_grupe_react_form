@@ -6,7 +6,7 @@ import style from "./List.module.css";
 export function VegyItem({ title, price, updateTotalCost }) {
   const minVegetablesAmount = 0;
   const maxVegetablesAmount = 10;
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
 
   function handleCountMinus() {
     if (count > minVegetablesAmount) {

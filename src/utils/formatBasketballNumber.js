@@ -4,7 +4,7 @@ export function formatBasketballNumber(number) {
 
 
 // function formatBasketballNumber(number, minSize) {
-//    return number.toString.padStar(minSize,'0');
+//    return (number + '').padStart(minSize,'0');
 // }
 
 // console.log(formatBasketballNumber(10, 3));
