@@ -1,6 +1,6 @@
 import { useState } from "react";
 import style from "./Basketball.module.css";
-import { formatBasketballNumber } from "../../utils/formatBasketballNumber";
+import { formatBasketballNumber } from "../../utils/formatBasketballNumber.js";
 
 export function Basketball() {
   const [score1, setScore1] = useState(0);
