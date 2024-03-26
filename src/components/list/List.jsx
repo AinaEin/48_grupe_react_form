@@ -53,7 +53,7 @@ export function List() {
           />
         ))}
       </ul>
-      <p className={style.totalCost}>Total Cost: €{totalCost.toFixed(2)}</p>
+      <span className={style.totalCost}>Total Cost: €{totalCost.toFixed(2)}</span>
     </div>
   );
 }

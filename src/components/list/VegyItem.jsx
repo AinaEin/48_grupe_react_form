@@ -31,7 +31,7 @@ export function VegyItem({ title, price, updateTotalCost }) {
         <button onClick={handleCountMinus} className={style.btn}>-</button>
         <span className={style.count}>{count}</span>
         <button onClick={handleCountPlus} className={style.btn}>+</button>
-        <span className={style.result}>€{totalCost.toFixed(2)}</span>
+        <span className={style.result}>kg/€{totalCost.toFixed(2)}</span>
       </div>
     </li>
   );
