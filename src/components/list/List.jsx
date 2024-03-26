@@ -6,34 +6,40 @@ import { useState } from "react";
 export function List() {
   const data = [
     {
-      name: "Bulves",
+      name: "Bulvės",
       unit: "kg",
-      price: 1
+      price: 1,
+      href: 'bulves'
     },
     {
       name: "Morkos",
       unit: "kg",
-      price: 0.8
+      price: 0.8,
+      href: 'morkos'
     },
     {
-      name: "Svogunai",
+      name: "Svogūnai",
       unit: "kg",
-      price: 0.69
+      price: 0.69,
+      href: 'svogunai'
     },
     {
-      name: "Kopustas",
+      name: "Kopūstas",
       unit: "kg",
-      price: 1.49
+      price: 1.49,
+      href: 'kopustai'
     },
     {
       name: "Pomidoras",
       unit: "kg",
-      price: 2.99
+      price: 2.99,
+      href: 'pomidorai'
     },
     {
       name: "Agurkas",
       unit: "kg",
-      price: 1.99
+      price: 1.99,
+      href: 'agrukas'
     },
   ];
 
@@ -46,8 +52,6 @@ export function List() {
   return (
     <div>
       <ul className={style.vegetables}>
-        {/* {data.map((vegy, index) => <li key={index} className={style.vegy}>{vegy}</li>)} */}
-        {/* data.map((vegy, index) => ( <VegyItem key={index} title={vegy} />))*/}
         {data.map((vegy, index) => (<VegyItem key={index} title={vegy.name} price={vegy.price} 
         updateTotalCost={updateTotalCost}
           />

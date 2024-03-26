@@ -7,7 +7,7 @@
 
 .vegy {
     display: flex;
-    max-width: 20rem;
+    max-width: 40rem;
     justify-content: space-between;
     align-items: center;
 }

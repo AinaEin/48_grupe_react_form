@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import style from "./List.module.css";
+import { Link } from "react-router-dom";
 
 
-export function VegyItem({ title, price, updateTotalCost }) {
+export function VegyItem({ title, price, updateTotalCost, unit, href }) {
   const minVegetablesAmount = 0;
   const maxVegetablesAmount = 10;
   const [count, setCount] = useState(0);
@@ -26,13 +27,20 @@ export function VegyItem({ title, price, updateTotalCost }) {
 
   return (
     <li className={style.vegy}>
-      <span className={style.vegyTitle}>{title}</span>
+      <span className={style.vegyTitle}>
+        {title} ({price}&euro;/{unit})
+      </span>
       <div className={style.controls}>
-        <button onClick={handleCountMinus} className={style.btn}>-</button>
+        <button onClick={handleCountMinus} className={style.btn}>
+          -
+        </button>
         <span className={style.count}>{count}kg</span>
-        <button onClick={handleCountPlus} className={style.btn}>+</button>
+        <button onClick={handleCountPlus} className={style.btn}>
+          +
+        </button>
         <span className={style.result}>€{totalCost.toFixed(2)}</span>
       </div>
+      <Link to={"/vegetables/" + href}>Read more</Link>
     </li>
   );
 }
