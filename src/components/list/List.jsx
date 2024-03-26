@@ -8,13 +8,13 @@ export function List() {
     {
       title: "Bulvės",
       unit: "kg",
-      price: 1,
+      price: 1.00,
       href: "bulves",
     },
     {
       title: "Morkos",
       unit: "kg",
-      price: 0.8,
+      price: 0.80,
       href: "morkos",
     },
     {
