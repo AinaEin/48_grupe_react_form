@@ -2,10 +2,11 @@
 import { useState } from "react";
 import style from "./List.module.css";
 import { Link } from "react-router-dom";
+import { convertToEnglish } from "../../utils/converterLtuToEn";
 
 
 export function VegyItem({ data, updateTotalCost }) {
-  const { title, price, unit, href } = data;
+  const { title, price, unit } = data;
   const minVegetablesAmount = 0;
   const maxVegetablesAmount = 10;
   const [count, setCount] = useState(0);
@@ -41,7 +42,8 @@ export function VegyItem({ data, updateTotalCost }) {
         </button>
         <span className={style.result}>€{totalCost.toFixed(2)}</span>
       </div>
-      <Link to={"/vegetables/" + href}>Read more</Link>
+      <Link to={"/vegetables/" + convertToEnglish(title)} state={{ data: data }}>Read more</Link>
     </li>
   );
 }
+       

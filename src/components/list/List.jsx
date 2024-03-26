@@ -52,12 +52,13 @@ export function List() {
   return (
     <div>
       <ul className={style.vegetables}>
-        {data.map((vegy, index) => (<VegyItem key={index} data={vegy}
-        updateTotalCost={updateTotalCost}
-          />
+        {data.map((vegy, index) => (
+          <VegyItem key={index} data={vegy} updateTotalCost={updateTotalCost} />
         ))}
       </ul>
-      <span className={style.totalCost}>Total Cost: €{totalCost.toFixed(2)}</span>
+      <span className={style.totalCost}>
+        Total Cost: €{totalCost.toFixed(2)}
+      </span>
     </div>
   );
 }
