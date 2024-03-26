@@ -4,7 +4,8 @@ import style from "./List.module.css";
 import { Link } from "react-router-dom";
 
 
-export function VegyItem({ title, price, updateTotalCost, unit, href }) {
+export function VegyItem({ data, updateTotalCost }) {
+  const { title, price, unit, href } = data;
   const minVegetablesAmount = 0;
   const maxVegetablesAmount = 10;
   const [count, setCount] = useState(0);
