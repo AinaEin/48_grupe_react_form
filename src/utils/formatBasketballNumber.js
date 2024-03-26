@@ -4,10 +4,12 @@ export function formatBasketballNumber(number) {
 
 
 // function formatBasketballNumber(number, minSize) {
-//    return (number + '').padStart(minSize,'0');
+//   let numString = number + "";
+//   const paddingSize = minSize - numString.length;
+//   return numString.padStart(paddingSize >= 0 ? minSize : numString.length, "0");
 // }
 
-// console.log(formatBasketballNumber(10, 3));
-// console.log(formatBasketballNumber(100, 4));
-// console.log(formatBasketballNumber(1000, 5));
+// console.log(formatBasketballNumber(10, 3)); 
+// console.log(formatBasketballNumber(100, 4)); 
+// console.log(formatBasketballNumber(1000, 5)); 
 // console.log(formatBasketballNumber(10000, 6));
