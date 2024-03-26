@@ -8,13 +8,13 @@ export function List() {
     {
       title: "Bulvės",
       unit: "kg",
-      price: 1.00,
+      price: 1.09,
       href: "bulves",
     },
     {
       title: "Morkos",
       unit: "kg",
-      price: 0.80,
+      price: 0.89,
       href: "morkos",
     },
     {
@@ -25,7 +25,7 @@ export function List() {
     },
     {
       title: "Kopūstas",
-      unit: "kg",
+      unit: "vnt",
       price: 1.49,
       href: "kopustai",
     },
@@ -37,8 +37,8 @@ export function List() {
     },
     {
       title: "Agurkas",
-      unit: "kg",
-      price: 1.99,
+      unit: "vnt",
+      price: 1.59,
       href: "agrukas",
     },
   ];
