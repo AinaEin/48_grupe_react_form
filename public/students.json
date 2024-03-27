@@ -1,0 +1,28 @@
+{
+  "students": [
+    {
+      "name": "Jonas",
+      "age": 99,
+      "isMarried": true,
+      "marks": [10, 2, 8, 4, 6]
+    },
+    {
+      "name": "Maryte",
+      "age": 88,
+      "isMarried": false,
+      "marks": [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9]
+    },
+    {
+      "name": "Petras",
+      "age": 77,
+      "isMarried": false,
+      "marks": [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    },
+    {
+      "name": "Ona",
+      "age": 66,
+      "isMarried": true,
+      "marks": [1010, 101, 0, -10, -100, 10]
+    }
+  ]
+}
