@@ -6,12 +6,12 @@ export function PageStudents() {
   const [count, setCount] = useState(0);
   const [studentData, setStudentData] = useState([]);
   const dataURL =
-    'https://raw.githubusercontent.com/AinaEin/48_grupe_react_form/main/public/students.json';
+    "https://raw.githubusercontent.com/front-end-by-rimantas/48-grupe-react-form/master/public/students.json";
 
   useEffect(() => {
     fetch(dataURL)
       .then((res) => res.json())
-      .then((data) => setStudentData(data))
+      .then((data) => setStudentData(data.students))
       .catch((e) => console.error(e));
   }, []);
 
@@ -22,7 +22,11 @@ export function PageStudents() {
         <button onClick={() => setCount(count + 1)}>{count}</button>
       </h1>
       <p className="page-description">Students attending this class:</p>
-      {studentData.length === 0 ? <StudentsNoData /> : <StudentList />}
+      {studentData.length === 0 ? (
+        <StudentsNoData />
+      ) : (
+        <StudentList data={studentData} />
+      )}
     </>
   );
 }
