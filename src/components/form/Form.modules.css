@@ -22,3 +22,10 @@ label {
     padding: 0.2em 0.5em;
     font-size: 1.3rem;
 }
+
+.error {
+    background-color: pink;
+    color: red;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+}
