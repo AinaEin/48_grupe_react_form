@@ -4,12 +4,14 @@ import style from "./Form.module.css";
 export function RegisterForm() {
   const [username, setUsername] = useState("");
   const [usernameErr, setUsernameErr] = useState("");
-  const [emailErr, setEmailErr] = useState("");
-  const [passwordErr, setPasswordErr] = useState("");
-  const [repeatPasswordErr, setRepeatPasswordErr] = useState("");
 
   const [email, setEmail] = useState("");
+  const [emailErr, setEmailErr] = useState("");
+
   const [password, setPassword] = useState("");
+  const [passwordErr, setPasswordErr] = useState("");
+
+  const [repeatPasswordErr, setRepeatPasswordErr] = useState("");
   const [repeatPassword, setRepeatPassword] = useState("");
 
   function handleUsernameChange(e) {
