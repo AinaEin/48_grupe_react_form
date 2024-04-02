@@ -30,11 +30,11 @@ export function RegisterForm() {
 
   function isValidUsername(text) {
     if (text.length < 1) {
-      return "Too short";
+      return "Your username is too short";
     }
 
     if (text.length > 20) {
-      return "Too long";
+      return "Your username is too long";
     }
 
     return true;
@@ -47,11 +47,11 @@ export function RegisterForm() {
     const invalidSymbols = /[^a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]/;
 
     if (email.length < 6) {
-      return "Too short";
+      return "Your email is too short";
     }
 
     if (email.length > 50) {
-      return "Too long";
+      return "Your email is too long";
     }
 
     if (!email.includes("@")) {
@@ -79,11 +79,11 @@ export function RegisterForm() {
 
   function isValidPassword(password) {
     if (password.length < 1) {
-      return "Too short";
+      return "Your password is too short";
     }
 
     if (password.length < 30) {
-      return "Too long";
+      return "Your password is too long";
     }
 
     if (password.search(/[a-z]/) == -1) {
@@ -149,7 +149,7 @@ export function RegisterForm() {
     const isFormValid = validateData();
 
     if (isFormValid) {
-      console.log("viskas gerai, siuncia info i serveri");
+      console.log("everything is good and been sent to server");
       // request to server
     }
   }
