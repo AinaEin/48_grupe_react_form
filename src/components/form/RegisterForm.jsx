@@ -42,8 +42,8 @@ export function RegisterForm() {
 
   function isValidEmail(email) {
     const parts = email.split("@");
+    const localPart = parts[0];
     const domainPart = parts[1];
-     const localPart = parts[0];
     const invalidSymbols = /[^a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]/;
 
     if (email.length < 6) {
